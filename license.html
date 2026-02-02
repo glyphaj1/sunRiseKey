@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sunrise License</title>
+<style>
+body {
+    background-color: #0d0d0d;
+    color: white;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box {
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+}
+.key {
+    word-break: break-all;
+    margin-bottom: 15px;
+}
+button {
+    background: #5865F2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background: #4752c4;
+}
+</style>
+</head>
+<body>
+<div class="box">
+    <div class="key" id="license">9^]k%nF_ilx^5Xh.SzpwVgw64JD!SJsW%wBS&6M4"d`i5=R6Blq?+*65!O=2/(;E8IzAOXtDaH{dx8d8N&(DMkFnz757TChMnRaSL)R<j#z_YrBp4;'C]L;FMn><H(7$</div>
+    <button onclick="copyKey()">Copy</button>
+</div>
 
+<script>
+function copyKey() {
+    const text = document.getElementById("license").innerText;
+    navigator.clipboard.writeText(text);
+    alert("License key copied!");
+}
+</script>
+</body>
+</html>
